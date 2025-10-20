@@ -1,0 +1,69 @@
+:root{
+    --primary-color: #836fff;
+    --black-color: #000;
+    --gray-color: #2b2b2b;
+    --light-gray-color: #5f5f5f;
+    --white-color: #ffffff;
+    --warning: #fc5353;
+}
+body{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders';
+    font-style: normal;
+    font-weight: 100 900;
+}
+.main{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.493)), url("image.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.cadastro{
+    background-color: var(--gray-color);
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    background-color: var(--light-gray-color);
+    border-style: none;
+    color: var(--white-color);
+    font-family: 'Big Shoulders';
+    font-size: large;
+}
+input::placeholder{
+    color: var(--white-color);
+}
+#avisoNome, #avisoEmail, #avisoSenha, #avisoConfirmarSenha{
+    width: 80%;
+    font-size: small;
+    text-align: left;
+    color: var(--warning);
+}
+button{
+    background-color: var(--primary-color);
+    font-family: 'Big Shoulders';
+    font-size: large;
+    padding: 15px;
+    border-radius: 25px;
+    border-style: none;
+    color: var(--white-color);
+    cursor: pointer;
+}
+a, h2{
+    color: var(--primary-color);
+}
