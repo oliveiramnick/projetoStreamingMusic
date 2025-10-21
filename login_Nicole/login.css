@@ -26,7 +26,7 @@ body{
     display: flex;
     align-items: center;
 }
-.cadastro{
+.login{
     background-color: var(--gray-color);
     width: 600px;
     height: 600px;
