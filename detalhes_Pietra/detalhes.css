@@ -1,0 +1,121 @@
+/* === Estilo geral === */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: linear-gradient(to bottom, #2e294e, #1b1b1b);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Botão voltar === */
+.voltar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  color: #836FFF;
+  border: 1px solid #836FFF;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.voltar:hover {
+  background: #836FFF;
+  color: black;
+}
+
+/* === Card principal === */
+.player-card {
+  background: black;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 800px;
+  box-shadow: 0 0 15px rgba(131, 111, 255, 0.3);
+}
+
+/* === Título === */
+h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* === Seção da música === */
+.music-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* === Capa da música === */
+.music-cover {
+  width: 140px;
+  height: 140px;
+  background: #836FFF;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* === Detalhes da música === */
+.music-details {
+  flex: 1;
+}
+
+.music-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.author {
+  font-weight: bold;
+  color: #836FFF;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* === Botão de play === */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.play-btn {
+  background: #836FFF;
+  color: black;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-btn:hover {
+  transform: scale(1.05);
+  background: #9b84ff;
+}
+
+/* === Linha divisória === */
+hr {
+  border: 1px solid #222;
+  margin: 10px 0;
+}
+.play-icon {
+  width: 80px;  /* tamanho reduzido */
+  height: 80px;
+  object-fit: contain;
+  
+}
