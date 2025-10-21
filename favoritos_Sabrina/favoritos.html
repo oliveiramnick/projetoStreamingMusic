@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoritos - Player de Música</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="favoritos.css">
+  
+</head>
+<body>
+
+  <header class="topbar">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-regular fa-circle-user"></i>
+  </header>
+
+  <section class="favoritos">
+    <div class="favoritos-header">
+      <i class="fa-solid fa-star"></i>
+      <div class="favoritos-text">
+        <h2>Favoritos</h2>
+        <p>Sua lista de músicas</p>
+      </div>
+    </div>
+
+    <div class="linha"></div>
+
+    <div class="cards"></div>
+  </section>
+
+  <div class="player">
+    <div class="player-info">
+      <img id="current-song-image" src="" alt="Capa da música">
+      <div class="player-text">
+        <h3 id="current-song-title">Nenhuma música selecionada</h3>
+        <p id="current-song-artist">Clique em um card para reproduzir</p>
+      </div>
+    </div>
+    <div class="progress-container">
+      <span class="time" id="current-time">0:00</span>
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span class="time" id="duration">0:00</span>
+    </div>
+    <div class="player-controls">
+      <i class="fas fa-step-backward" id="prev-btn"></i>
+      <i class="fas fa-play" id="play-btn"></i>
+      <i class="fas fa-step-forward" id="next-btn"></i>
+    </div>
+  </div>
+  <script src="favortitos.js"></script>
+</body>
+</html>
