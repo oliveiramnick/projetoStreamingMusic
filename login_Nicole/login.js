@@ -1,4 +1,5 @@
 let usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+let logado = JSON.parse(localStorage.getItem('logado')) || ""
 
 function logar(){
     const avisoEmail = document.getElementById('avisoEmail')
@@ -7,27 +8,25 @@ function logar(){
     const email = document.getElementById('email').value.trim()
     const senha = document.getElementById('senha').value.trim()
 
-   
     if (email === '') {
         return avisoEmail.textContent = "Campo obrigatório"
     } 
     if (senha === '') {
         return avisoSenha.textContent = "Campo obrigatório"
     }
-    
-    usuarios.push({email: email, senha: senha, favoritos: []})
-    nome.email = ''
-    nome.senha = ''
 
-    
-    if(email =="admin" && senha =="admin"){
-        alert("Logando...")
-        location.href = "home.html"
-    }else{
-        alert("Email e senha incorretos")
+    let found = false;
+    usuarios.forEach(item => {
+        if(email == item.email && senha == item.senha){
+            logado = item
+            localStorage.setItem('logado', JSON.stringify(item))
+            // conta()
+            found = true;
+            document.location="../catalogo_Rafael/index.html"
+        }
+    })
+
+    if(found == false){
+        return avisoSenha.textContent = "Email e senha incorretos"
     }
-
-}
-function salvar() {
-    localStorage.setItem('usuarios', JSON.stringify(usuarios))
 }
