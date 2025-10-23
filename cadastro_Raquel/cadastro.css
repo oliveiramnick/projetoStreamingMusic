@@ -25,7 +25,6 @@ body{
 .logo{
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 .logo img{
     width: 70px;
@@ -40,6 +39,7 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
 }
 input{
     width: 80%;

@@ -5,13 +5,14 @@
     --light-gray-color: #5f5f5f;
     --white-color: #ffffff;
     --warning: #fc5353;
+    --font: Helvetica, Arial, sans-serif;
 }
 body{
     background-color: var(--black-color);
     color: var(--white-color);
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica', 'Arial', sans-serif;;
+    font-family: var(--font);
     font-style: normal;
     font-weight: 100 900;
 }
@@ -26,6 +27,10 @@ body{
     display: flex;
     align-items: center;
 }
+.logo img{
+    width: 70px;
+    border-radius: 20px;
+}
 .login{
     background-color: var(--gray-color);
     width: 600px;
@@ -35,6 +40,7 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
 }
 input{
     width: 80%;
@@ -42,13 +48,13 @@ input{
     background-color: var(--light-gray-color);
     border-style: none;
     color: var(--white-color);
-    font-family: 'Big Shoulders';
+    font-family: var(--font);
     font-size: large;
 }
 input::placeholder{
     color: var(--white-color);
 }
-#avisoNome, #avisoEmail, #avisoSenha, #avisoConfirmarSenha{
+#avisoEmail, #avisoSenha{
     width: 80%;
     font-size: small;
     text-align: left;
@@ -56,7 +62,7 @@ input::placeholder{
 }
 button{
     background-color: var(--primary-color);
-    font-family: 'Big Shoulders';
+    font-family: var(--font);
     font-size: large;
     padding: 15px;
     border-radius: 25px;

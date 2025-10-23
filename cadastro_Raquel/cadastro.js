@@ -32,6 +32,10 @@ function cadastrar(){
     nome.email = ''
     nome.senha = ''
     nome.confirmarSenha = ''
+    avisoNome = ''
+    avisoEmail = ''
+    avisoSenha = ''
+    avisoConfirmarSenha = ''
     salvar()
     document.location="../login_Nicole/login.html"
 }
