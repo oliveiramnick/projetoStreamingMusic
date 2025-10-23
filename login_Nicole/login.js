@@ -22,11 +22,12 @@ function logar(){
             localStorage.setItem('logado', JSON.stringify(item))
             // conta()
             found = true;
-            document.location="../catalogo_Rafael/index.html"
+            document.location="../catalogo_Rafael/home/index.html"
         }
     })
 
     if(found == false){
         return avisoSenha.textContent = "Email e senha incorretos"
     }
+
 }
