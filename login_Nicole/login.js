@@ -22,7 +22,7 @@ function logar(){
             localStorage.setItem('logado', JSON.stringify(item))
             // conta()
             found = true;
-            document.location="../catalogo_Rafael/home/index.html"
+            document.location="../home_Rafael/index.html"
         }
     })
 
@@ -31,3 +31,4 @@ function logar(){
     }
 
 }
+
