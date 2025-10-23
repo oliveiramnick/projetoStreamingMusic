@@ -1,55 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Favoritos - Player de Música</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="favoritos.css">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favoritos - Vibe Stream</title>
+  <link rel="stylesheet" href="favoritos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <header class="topbar">
-    <i class="fa-solid fa-bars"></i>
-    <i class="fa-regular fa-circle-user"></i>
-  </header>
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <div class="logo">Vibe Stream</div>
+      <nav>
+        <ul>
+          <li><i class="fas fa-home"></i> Início</li>
+          <li class="active"><i class="fas fa-star"></i> Favoritos</li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
 
-  <section class="favoritos">
-    <div class="favoritos-header">
-      <i class="fa-solid fa-star"></i>
-      <div class="favoritos-text">
-        <h2>Favoritos</h2>
-        <p>Sua lista de músicas</p>
+  <!-- main -->
+  <main class="main" id="main">
+    <header>
+      <div class="header-left">
+        <button id="toggle-sidebar"><i class="fas fa-bars"></i></button>
       </div>
-    </div>
 
-    <div class="linha"></div>
+      <input type="text" id="search" placeholder="Procure nos seus favoritos..." />
 
-    <div class="cards"></div>
-  </section>
+      <div class="profile-container">
+        <button class="profile-btn" id="profile-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Perfil" />
+        </button>
 
-  <div class="player">
-    <div class="player-info">
-      <img id="current-song-image" src="" alt="Capa da música">
-      <div class="player-text">
-        <h3 id="current-song-title">Nenhuma música selecionada</h3>
-        <p id="current-song-artist">Clique em um card para reproduzir</p>
+        <div class="profile-menu" id="profile-menu">
+          <ul>
+            <li>Perfil</li>
+            <li>Configurações</li>
+            <li class="logout">Sair</li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="progress-container">
-      <span class="time" id="current-time">0:00</span>
-      <div class="progress-bar" id="progress-bar">
-        <div class="progress" id="progress"></div>
+    </header>
+
+    <!-- FAVORITOS POR MODALIDADE -->
+
+    <section id="forro">
+      <h2>Forró</h2>
+      <div class="playlist-grid">
+        <div class="playlist-card">
+          <a href="#">
+            <img src="/favoritos_Sabrina/img/calcinhapreta.png" alt="Calcinha Preta">
+            <h3>Calcinha Preta</h3>
+            <p>Hoje à Noite</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src="https://cdn-images.dzcdn.net/images/cover/fc9ac541b39af3d7be59829a39700f5b/0x1900-000000-80-0-0.jpg" alt="Aviões do Forró">
+            <h3>Aviões do Forró</h3>
+            <p>Blá Blá Blá</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src=https://yt3.googleusercontent.com/5v1PFsCyEhdkhjsFv8Yzcbs3Jo5GV_cfJ-s1l1cdhcnP4rxOjujBSIe2VYuf-nn1RfoazNzE=s900-c-k-c0x00ffffff-no-rj" alt="Mastruz com Leite">
+            <h3>Mastruz com Leite</h3>
+            <p>Meu Vaqueiro, Meu Peão</p>
+          </a>
+        </div>
       </div>
-      <span class="time" id="duration">0:00</span>
-    </div>
-    <div class="player-controls">
-      <i class="fas fa-step-backward" id="prev-btn"></i>
-      <i class="fas fa-play" id="play-btn"></i>
-      <i class="fas fa-step-forward" id="next-btn"></i>
-    </div>
-  </div>
-  <script src="favortitos.js"></script>
+    </section>
+
+    <section id="sertanejo">
+      <h2>Sertanejo</h2>
+      <div class="playlist-grid">
+        <div class="playlist-card">
+          <a href="#">
+            <img src="https://bandfmcampinas.com/wp-content/uploads/elementor/thumbs/Luan-Santana-completa-34-anos-de-idade-hoje-relembre-sua-r2t5m5un1pymeft9qefciyjrm8d22ch97jpdyur3hs.jpeg" alt="Luan Santana">
+            <h3>Luan Santana</h3>
+            <p>Te Esperando</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/mariliaMendonca.jpg" alt="Marília Mendonça">
+            <h3>Marília Mendonça</h3>
+            <p>Infiel</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/zeNetoCristiano.jpg" alt="Zé Neto & Cristiano">
+            <h3>Zé Neto & Cristiano</h3>
+            <p>Largado às Traças</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mpb">
+      <h2>MPB</h2>
+      <div class="playlist-grid">
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/elisRegina.jpg" alt="Elis Regina">
+            <h3>Elis Regina</h3>
+            <p>Como Nossos Pais</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/caetanoVeloso.jpg" alt="Caetano Veloso">
+            <h3>Caetano Veloso</h3>
+            <p>Sozinho</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/gilbertoGil.jpg" alt="Gilberto Gil">
+            <h3>Gilberto Gil</h3>
+            <p>Aquele Abraço</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pop">
+      <h2>Pop</h2>
+      <div class="playlist-grid">
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/duaLipa.jpg" alt="Dua Lipa">
+            <h3>Dua Lipa</h3>
+            <p>Levitating</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/theWeeknd.jpg" alt="The Weeknd">
+            <h3>The Weeknd</h3>
+            <p>Blinding Lights</p>
+          </a>
+        </div>
+        <div class="playlist-card">
+          <a href="#">
+            <img src="img/taylorSwift.jpg" alt="Taylor Swift">
+            <h3>Taylor Swift</h3>
+            <p>Style</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="favoritos.js"></script>
 </body>
 </html>
