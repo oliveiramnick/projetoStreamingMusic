@@ -11,11 +11,21 @@ function cadastrar(){
     const senha = document.getElementById('senha').value.trim()
     const confirmarSenha = document.getElementById('confirmarSenha').value.trim()
 
+    let emailDuplicado = false
+    usuarios.forEach(item => {
+        if(item.email == email){
+            emailDuplicado = true
+        }
+    })
+    if(emailDuplicado == true){
+        return avisoEmail.textContent = "Já possui conta"
+    }
+
     if (nome === '') {
         return avisoNome.textContent = "Campo obrigatório"
     }
-    if (email === '') {
-        return avisoEmail.textContent = "Campo obrigatório"
+    if (email === '' || !email.includes("@")) {
+        return avisoEmail.textContent = "Email inválido"
     } 
     if (senha === '') {
         return avisoSenha.textContent = "Campo obrigatório"
@@ -32,10 +42,6 @@ function cadastrar(){
     nome.email = ''
     nome.senha = ''
     nome.confirmarSenha = ''
-    avisoNome = ''
-    avisoEmail = ''
-    avisoSenha = ''
-    avisoConfirmarSenha = ''
     salvar()
     document.location="../login_Nicole/login.html"
 }
