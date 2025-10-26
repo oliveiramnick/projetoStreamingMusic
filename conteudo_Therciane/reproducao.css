@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;  
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-card-principal {
+  border-radius: 20px;
+  box-shadow: 0 4px 20px #836fff;
+  background-color: transparent;
+  color: white;
+  padding: 2rem;
+  width: 380px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.controls i {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.controls i:hover {
+  color: #836fff; 
+}
+
+#btnDown {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#btnDown:hover {
+  transform: translateY(2px);
+  color: #836fff;
+}
+
+.like-btn {
+  color: #fff;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.like-btn.liked {
+  color: #836fff;
+}
+
+iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 80px;
+  border: none;
+  margin-top: 1rem;
+}
+
+@media(max-width: 768px){
+  .player-card-principal{
+    width: 50vh;
+    height: 140vh;
+  }
+
+  .album-cover{
+    width: 50vh;
+  }
+}
