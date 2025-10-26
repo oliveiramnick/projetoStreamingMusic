@@ -4,25 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Favoritos - Vibe Stream</title>
-  <link rel="stylesheet" href="favoritos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
 
-  <!-- sidebar -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="favoritos.css" />
+
+  <!-- Ícones Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <!-- SIDEBAR -->
   <aside class="sidebar" id="sidebar">
     <div>
       <div class="logo">Vibe Stream</div>
       <nav>
         <ul>
-          <li><i class="fas fa-home"></i> Início</li>
-          <li class="active"><i class="fas fa-star"></i> Favoritos</li>
+          <li>
+            <a href="/home_Rafael/index.html">
+              <i class="fas fa-home"></i> Início
+            </a>
+          </li>
+          <li class="active">
+            <i class="fas fa-star"></i> Favoritos
+          </li>
         </ul>
       </nav>
     </div>
   </aside>
 
-  <!-- main -->
+  <!-- CONTEÚDO PRINCIPAL -->
   <main class="main" id="main">
     <header>
       <div class="header-left">
@@ -46,28 +59,37 @@
       </div>
     </header>
 
-    <!-- FAVORITOS POR MODALIDADE -->
+    <!-- SEÇÃO DE RECENTES -->
+    <section id="recentes">
+      <h2>Recentes</h2>
+      <div class="playlist-grid" id="recentes-grid">
+        <!-- Os cards curtidos aparecerão aqui -->
+      </div>
+    </section>
 
+    <!-- FAVORITOS POR GÊNERO MUSICAL -->
     <section id="forro">
       <h2>Forró</h2>
       <div class="playlist-grid">
         <div class="playlist-card">
           <a href="#">
-            <img src="/favoritos_Sabrina/img/calcinhapreta.png" alt="Calcinha Preta">
+            <img src="https://cdn.ibahia.com/img/Artigo-Destaque/310000/Calcinha-Preta-lanca-novo-EP-do-DVD-Atemporal---Ao0031764800202404182018.png?xid=1575129" alt="Calcinha Preta" />
             <h3>Calcinha Preta</h3>
             <p>Hoje à Noite</p>
           </a>
         </div>
+
         <div class="playlist-card">
           <a href="#">
-            <img src="https://cdn-images.dzcdn.net/images/cover/fc9ac541b39af3d7be59829a39700f5b/0x1900-000000-80-0-0.jpg" alt="Aviões do Forró">
+            <img src="https://cdn-images.dzcdn.net/images/cover/fc9ac541b39af3d7be59829a39700f5b/0x1900-000000-80-0-0.jpg" alt="Aviões do Forró" />
             <h3>Aviões do Forró</h3>
             <p>Blá Blá Blá</p>
           </a>
         </div>
+
         <div class="playlist-card">
           <a href="#">
-            <img src=https://yt3.googleusercontent.com/5v1PFsCyEhdkhjsFv8Yzcbs3Jo5GV_cfJ-s1l1cdhcnP4rxOjujBSIe2VYuf-nn1RfoazNzE=s900-c-k-c0x00ffffff-no-rj" alt="Mastruz com Leite">
+            <img src="https://yt3.googleusercontent.com/5v1PFsCyEhdkhjsFv8Yzcbs3Jo5GV_cfJ-s1l1cdhcnP4rxOjujBSIe2VYuf-nn1RfoazNzE=s900-c-k-c0x00ffffff-no-rj" alt="Mastruz com Leite" />
             <h3>Mastruz com Leite</h3>
             <p>Meu Vaqueiro, Meu Peão</p>
           </a>
@@ -80,21 +102,23 @@
       <div class="playlist-grid">
         <div class="playlist-card">
           <a href="#">
-            <img src="https://bandfmcampinas.com/wp-content/uploads/elementor/thumbs/Luan-Santana-completa-34-anos-de-idade-hoje-relembre-sua-r2t5m5un1pymeft9qefciyjrm8d22ch97jpdyur3hs.jpeg" alt="Luan Santana">
+            <img src="https://bandfmcampinas.com/wp-content/uploads/elementor/thumbs/Luan-Santana-completa-34-anos-de-idade-hoje-relembre-sua-r2t5m5un1pymeft9qefciyjrm8d22ch97jpdyur3hs.jpeg" alt="Luan Santana" />
             <h3>Luan Santana</h3>
             <p>Te Esperando</p>
           </a>
         </div>
+
         <div class="playlist-card">
           <a href="#">
-            <img src="img/mariliaMendonca.jpg" alt="Marília Mendonça">
+            <img src="https://s2-quem.glbimg.com/YS-iDTGu1JKJXOWqgawScAkdjTU=/0x0:1400x950/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2024/q/j/PGqrGCTkC4b7BMZoYLTg/marilia.jpg" alt="Marília Mendonça" />
             <h3>Marília Mendonça</h3>
             <p>Infiel</p>
           </a>
         </div>
+
         <div class="playlist-card">
           <a href="#">
-            <img src="img/zeNetoCristiano.jpg" alt="Zé Neto & Cristiano">
+            <img src="https://img.band.com.br/image/2023/11/07/ze-neto-e-cristiano-no-caldas-country-18125.jpg" alt="Zé Neto & Cristiano" />
             <h3>Zé Neto & Cristiano</h3>
             <p>Largado às Traças</p>
           </a>
@@ -107,21 +131,23 @@
       <div class="playlist-grid">
         <div class="playlist-card">
           <a href="#">
-            <img src="img/elisRegina.jpg" alt="Elis Regina">
+            <img src="https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2020/04/78c822c-elis_regina.png" alt="Elis Regina" />
             <h3>Elis Regina</h3>
             <p>Como Nossos Pais</p>
           </a>
         </div>
+
         <div class="playlist-card">
           <a href="#">
-            <img src="img/caetanoVeloso.jpg" alt="Caetano Veloso">
+            <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/3/a/8/5/3a852df5917814a20762d8ea755170ba.jpg" alt="Caetano Veloso" />
             <h3>Caetano Veloso</h3>
             <p>Sozinho</p>
           </a>
         </div>
+
         <div class="playlist-card">
           <a href="#">
-            <img src="img/gilbertoGil.jpg" alt="Gilberto Gil">
+            <img src="https://camoesradio.com/ewrt87u6ythghrhfg/2020/04/gilbertogil.jpg" alt="Gilberto Gil" />
             <h3>Gilberto Gil</h3>
             <p>Aquele Abraço</p>
           </a>
@@ -134,30 +160,32 @@
       <div class="playlist-grid">
         <div class="playlist-card">
           <a href="#">
-            <img src="img/duaLipa.jpg" alt="Dua Lipa">
+            <img src="https://people.com/thmb/Ww-wS--Jmc2U2xvF9GaGjS2LB3s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(683x137:685x139)/dua-lipa-110923-1-75f385716fc941b491072d4403b73cc3.jpg" alt="Dua Lipa" />
             <h3>Dua Lipa</h3>
             <p>Levitating</p>
           </a>
         </div>
+
         <div class="playlist-card">
           <a href="#">
-            <img src="img/theWeeknd.jpg" alt="The Weeknd">
+            <img src="https://www.interviewmagazine.com/wp-content/uploads/2023/04/ERL_INTERVIEW_WEEKND-8-1-scaled.jpg" alt="The Weeknd" />
             <h3>The Weeknd</h3>
             <p>Blinding Lights</p>
           </a>
         </div>
+
         <div class="playlist-card">
-          <a href="#">
-            <img src="img/taylorSwift.jpg" alt="Taylor Swift">
-            <h3>Taylor Swift</h3>
-            <p>Style</p>
+          <a href="/conteudo_Therciane/reproducao.html">
+            <img src="https://i.pinimg.com/736x/76/18/16/761816c2d38fe30915cb3b5346c7eb35.jpg" />
+            <h3>Ariana Grande</h3>
+            <p>Save Your Tears "remix"</p>
           </a>
         </div>
       </div>
     </section>
-
   </main>
 
+  <!-- JS -->
   <script src="favoritos.js"></script>
 </body>
 </html>
