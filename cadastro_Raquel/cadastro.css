@@ -28,7 +28,7 @@ body{
 }
 .logo img{
     width: 70px;
-    border-radius: 20px;
+    margin-right: 10px;
 }
 .cadastro{
     background-color: var(--gray-color);
@@ -40,6 +40,7 @@ body{
     display: flex;
     justify-content: center;
     border-radius: 20px;
+    border-radius: 20px;
 }
 input{
     width: 80%;
@@ -49,6 +50,7 @@ input{
     color: var(--white-color);
     font-family: var(--font);
     font-size: large;
+    border-radius: 10px;
 }
 input::placeholder{
     color: var(--white-color);
