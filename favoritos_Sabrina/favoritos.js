@@ -73,3 +73,48 @@ function addToRecentes(artista, musica) {
 // addToRecentes("Anitta", "Funk do Momento");
 // addToRecentes("Coldplay", "Yellow");
 
+let usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+let logado = JSON.parse(localStorage.getItem('logado')) || "";
+const favoritosLista = document.getElementById('favoritos')
+
+function renderizarLista(){
+    favoritosLista.innerHTML = ' '
+    let favoritos = logado.favoritos || []
+    
+    favoritos.forEach((item, index) => {
+        criarFavorito(item, index)
+    })
+}
+
+function criarFavorito(item, index){
+    const div = document.createElement('div')
+    div.className = 'playlist-card'
+
+    const button = document.createElement('button')
+    button.className = 'fechar'
+    button.textContent = 'X'
+    button.onclick = () => removerFavorito(index, item)
+    div.appendChild(button)
+
+    const p = document.createElement('h3')
+    p.textContent = item
+    div.appendChild(p)
+        
+    favoritos.appendChild(div)
+}
+
+function removerFavorito(indexLogado, item) {
+    usuarios.forEach(user => {
+        if(user.email == logado.email){
+            const indexUser = user.favoritos.indexOf(item);
+            if (indexUser !== -1) {
+                user.favoritos.splice(indexUser, 1);
+                logado.favoritos.splice(indexLogado, 1);
+
+                localStorage.setItem('logado', JSON.stringify(logado));
+                localStorage.setItem('usuarios', JSON.stringify(usuarios));
+            }
+        }
+      })
+    renderizarLista()
+}

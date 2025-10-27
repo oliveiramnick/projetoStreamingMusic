@@ -45,7 +45,6 @@ a {
     padding: 12px 0;
     color: #836fff;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .sidebar nav ul {
@@ -327,4 +326,28 @@ body.search-active .playlist-grid {
 }
 
 
+}
+
+/* retirar do favoritos */
+.fechar{
+  background-color: #ffffff00;
+  color: #fff;
+  border-style: none;
+  margin-left: 130px;
+  cursor: pointer;
+}
+
+.fechar:hover{
+  color: #000000;
+}
+
+.renderizar{
+  background-color: #ffffff00;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
+
+.renderizar:hover{
+  color: #000000;
 }
