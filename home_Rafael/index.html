@@ -15,8 +15,8 @@
       <div class="logo">Vibe Stream</div>
       <nav>
         <ul>
-          <li><a href="/home_Rafael/index.html"><i class="fas fa-home"></i> Início</a></li>
-          <li><a href="/favoritos_Sabrina/favoritos.html"><i class="fas fa-star"></i>Favoritos</a></li>
+          <li><a href="../home_Rafael/index.html"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="../favoritos_Sabrina/favoritos.html"><i class="fas fa-star"></i>Favoritos</a></li>
         </ul>
       </nav>
     </div>
@@ -38,9 +38,9 @@
 
     <div class="profile-menu" id="profile-menu">
       <ul>
-        <li>Perfil</li>
-        <li>Configurações</li>
-        <li class="logout">Sair</li>
+        <li onclick="popupAbrirConta()">Perfil</li>
+        <li onclick="popupAbrirConfiguracao()">Configurações</li>
+        <li onclick="sair()" class="logout">Sair</li>
       </ul>
     </div>
   </div>
@@ -252,6 +252,33 @@
       </div>
     </section>
 
+    <div class="popup-conta">
+        <div class="popup">
+            <button class="popup-fechar" onclick="popupFecharConta()">X</button>
+            <div class="popup-conteudo">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Perfil" />
+                    <h1>Usuário</h1>
+                </div>
+                <p id="nome"></p>
+                <p id="email"></p>
+            </div>
+        </div>
+    </div>
+    <div class="popup-configuracao">
+        <div class="popup">
+            <button class="popup-fechar" onclick="popupFecharConfiguracao()">X</button>
+            <div class="popup-conteudo">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Perfil" />
+                    <h1>Usuário</h1>
+                </div>
+                <input id="novoNome" type="text" placeholder="Atualizar nome">
+                <input id="novoEmail" type="text" placeholder="Atualizar email">
+                <button id="atualizarUsuario" onclick="atualizarUsuario()">Atualizar</button>
+            </div>
+        <div>
+    </div>
     <footer></footer>
   </main>
 

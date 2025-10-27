@@ -60,8 +60,7 @@ a, p{
   margin-right: 10px;
 }
 
-.sidebar nav li:hover,
-.sidebar nav li.active {
+.sidebar nav li:hover {
   color: #836fff;
 }
 
@@ -299,4 +298,85 @@ body.search-active .playlist-card p {
 .playlist-grid.searching-single .playlist-card {
   flex: 0 1 150px;
   
+}
+
+/* conta */
+.popup-conta, .popup-configuracao{
+    display: none;
+    background-color: #0000007e;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup-conteudo div{
+    justify-content: center;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.popup-conteudo img{
+    background-color: #ffffff;
+    width: 30px;
+    padding: 2px;
+    border-radius: 20px;
+}
+.popup-conteudo h1{
+    margin: 10px;
+}
+.popup-conteudo p{
+    width: auto;
+    padding: 10px;
+    background-color: #5f5f5f;
+    font-size: large;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.popup-conteudo input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #5f5f5f;
+    border-style: none;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+}
+.popup-conteudo input::placeholder{
+    color: #ffffff;
+}
+.popup{
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    position: relative;
+    border-radius: 20px;
+}
+.popup-fechar{
+    padding: 6px 12px;
+    position: absolute;
+    color: #836fff;
+    background-color: #2b2b2b;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    top: 5px;
+    right: 10px;
+}
+#atualizarUsuario{
+    background-color: #836fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+    padding: 15px;
+    border-radius: 25px;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
 }
