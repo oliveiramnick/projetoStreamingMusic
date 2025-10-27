@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const clientId = 'cfe47a4030b64c0a87cbdabe9edffa84';
-  const redirectUri = window.location.origin; 
-  const scopes = [
-    'user-read-playback-state',
-    'user-modify-playback-state',
-    'user-read-currently-playing',
-    'streaming',
-    'user-read-email',
-    'user-read-private'
-  ];
-  const tracks = [
+const redirectUri = window.location.origin; 
+const scopes = [
+  'user-read-playback-state',
+  'user-modify-playback-state',
+  'user-read-currently-playing',
+  'streaming',
+  'user-read-email',
+  'user-read-private'
+];
+
+const tracks = [
   //Pop -> The Weeknd, Lady Gaga
       {
         title: "Save Your Tears 'remix'",
         artist: "The Weeknd, Ariana Grande",
-        cover: "https://i.pinimg.com/1200x/eb/a9/4d/eba94d482871731324e2730d5ff963a7.jpg",
+        cover: "https://i.pinimg.com/1200x/ae/6a/3b/ae6a3b42c80f7f4c3f7664bcd1f78dab.jpg",
         album: "Starboy",
         url: "https://open.spotify.com/embed/track/37BZB0z9T8Xu7U3e65qxFy"
       },
@@ -156,70 +157,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
       //Eletronico -> david guetta, marshmellow 
       {
-        title: "Hey Brother",
-        artist: "Avcii",
-        cover: "https://i.pinimg.com/1200x/a2/32/e3/a232e31c104fc2dcc249a8e629e28e41.jpg",
-        album: "TRUE",
-        url: ""
-      },
-      {
-        title: "We Found Love",
-        artist: "Calvin Harris, Rihanna",
-        cover: "https://i.pinimg.com/1200x/6e/6a/eb/6e6aeb65c5cbaeb13bb7919efd27b56a.jpg",
-        album: "Talk That Talk",
-        url: ""
-      },
-      {
-        title: "Titanium",
-        artist: "David Guetta, Sia",
-        cover: "https://i.pinimg.com/736x/35/d4/04/35d404ba6122672d68b168959f1e7e67.jpg",
-        album: "Nothining But the Beat",
-        url: ""
-      },
-      {
-        title: "I Remember",
-        artist: "Deadmau5, Kaskade",
-        cover: "https://i.pinimg.com/736x/07/9c/55/079c55f49e674837cb230a07695e1b0a.jpg",
-        album: "Strobelite Seduction",
-        url: ""
-      },
-      {
-        title: "Alone",
-        artist: "Marshmellow",
-        cover: "https://i.pinimg.com/1200x/68/0e/67/680e6737c306df709f2994e0aaffd786.jpg",
-        album: "JOYTIME",
-        url: ""
+        title: "In The Name Of Love",
+        artist: "Bebe Rexha, Martin Garrix",
+        cover: "https://i.pinimg.com/736x/70/e4/3b/70e43bf90fe0ae8e8a8ff9cf64ca67fb.jpg",
+        url: "https://open.spotify.com/embed/track/23L5CiUhw2jV1OIMwthR3S"
       },
       //Mpb -> 
       {
-        title: "Desde Que o Samba É Samba",
-        artist: "Caetano Veloso, Gilberto Gil",
-        cover: "https://i.pinimg.com/1200x/2f/4a/00/2f4a00f96458b1af15d1a8eb96f670ec.jpg",
-        album: "Tropicália 2",
-        url: ""
+        title: "Exagerado",
+        artist: "Cazuza",
+        cover: "https://i.pinimg.com/736x/c8/d1/6a/c8d16aae8928b2f55f1b881aa399f83c.jpg",
+        url: "https://open.spotify.com/embed/track/4d0DpU7Odiv0ztvX2GxJlk"
       },
-      {
-        title: "Apesar De Você",
-        artist: "Chico Buarque",
-        cover: "https://i.pinimg.com/736x/00/2e/47/002e47ecc10c540f80866b2bc456b57f.jpg",
-        album: "Chico Buarque",
-        url: ""
-      },
-      {
-        title: "Alô Alô Marciano",
-        artist: "Elis Regina",
-        cover: "https://cdn-images.dzcdn.net/images/cover/ffa1b60e3c99c5e5e152f367d5c13d45/0x1900-000000-80-0-0.jpg",
-        album: "2 É Demais",
-        url: ""
-      },
-      {
-        title: "Cheiro De Amor",
-        artist: "Maria Bethânia",
-        cover: "https://i.pinimg.com/736x/e5/d1/1e/e5d11ee38fef6a7427e0c02235f1205d.jpg",
-        album: "Mel",
-        url: ""
-      },
-      
       //Sertanejo -> Luan Santana, Jorge & Matheus
       {
         title: "Chuva de Arroz",
@@ -291,10 +240,149 @@ document.addEventListener("DOMContentLoaded", () => {
         album: "Na Balada",
         url: "https://open.spotify.com/embed/track/7iXN1pwx70l9NXsUt55AGS"
       },
-      
+      {
+        title: "Desde Que o Samba É Samba",
+        artist: "Caetano Veloso",
+        cover: "imagens/caetanoVeloso.jpg",
+        album: "Caetano Veloso",
+        url: "https://open.spotify.com/embed/track/628hP5ZZjXTz4AnIyDfDZ0?utm_source=generator"
+      },
+      {
+        title: "Sonho Meu",
+        artist: "Caetano Veloso",
+        cover: "imagens/caetanoVeloso.jpg",
+        album: "Caetano Veloso",
+        url: "https://open.spotify.com/embed/track/4wUzJax4y4a6jIhbF28LoC?utm_source=generator"
+      },
+      {
+        title: "Apesar de Você",
+        artist: "Chico Buarque",
+        cover: "imagens/chicoBuarque.jpg",
+        album: "Chico Buarque",
+        url: "https://open.spotify.com/embed/track/2GAFZG9Z7UGS1iMm4Idrnr?utm_source=generator"
+      },
+      {
+        title: "Cotidiano",
+        artist: "Chico Buarque",
+        cover: "imagens/chico_construcao.png",
+        album: "Construção",
+        url: "https://open.spotify.com/embed/track/127twwy3iCo1xBRQHyWetU?utm_source=generator"
+      },
+      {
+        title: "Alô Alô Marciano",
+        artist: "Elis Regina",
+        cover: "imagens/elisRegina.jpg",
+        album: "Elis Regina",
+        url: "https://open.spotify.com/embed/track/0wacj5AePmtFHt8mzdk6t4?utm_source=generator"
+      },
+      {
+        title: "Águas de Março",
+        artist: "Elis Regina",
+        cover: "imagens/elisAndTom.jpg",
+        album: "Elis & Tom",
+        url: "https://open.spotify.com/embed/track/15ouqiBsgL12olEwP3COsH?utm_source=generator"
+      },
+      {
+        title: "Coração Vagabundo",
+        artist: "Gal Costa",
+        cover: "imagens/gal_coracaoVagabundo.jpg",
+        album: "Coração Vagabundo",
+        url: "https://open.spotify.com/embed/track/60TftyBmMIL7wBdM37KuRj?utm_source=generator"
+      },
+      {
+        title: "Baby",
+        artist: "Gal Costa",
+        cover: "imagens/galCosta.jpg",
+        album: "Gal Costa",
+        url: "https://open.spotify.com/embed/track/0C13P4IghHNFPjt4zIJ8vX?utm_source=generator"
+      },
+      {
+        title: "Cheiro de Amor",
+        artist: "Maria Bethania",
+        cover: "imagens/maria_cancoes",
+        album: "As Canções Que Você Fez Pra Mim",
+        url: "https://open.spotify.com/embed/track/2dhV6VPKdqNg85vgv16xjo?utm_source=generator"
+      },
+      {
+        title: "Reconvexo",
+        artist: "Maria Bethania",
+        cover: "imagens/maria_aoVivo",
+        album: "Ao Vivo",
+        url: "https://open.spotify.com/embed/track/1ddeP7G76wscmc0RH5sjVA?utm_source=generator"
+      },
+      {
+        title: "Hey Brother",
+        artist: "Avcii",
+        cover: "imagens/avcii_true.jpg",
+        album: "True",
+        url: "https://open.spotify.com/embed/track/4lhqb6JvbHId48OUJGwymk?utm_source=generator"
+      },
+      {
+        title: "Wake Me Up",
+        artist: "Avcii",
+        cover: "imagens/avcii_true.jpg",
+        album: "True",
+        url: "https://open.spotify.com/embed/track/0nrRP2bk19rLc0orkWPQk2?utm_source=generator"
+      },
+      {
+        title: "We Found Love (feat. Rihanna)",
+        artist: "Calvin Harris",
+        cover: "imagens/calvin_talk.jpg",
+        album: "Talk That Talk (Rihanna)",
+        url: "https://open.spotify.com/embed/track/6qn9YLKt13AGvpq9jfO8py?utm_source=generator"
+      },
+      {
+        title: "Summer",
+        artist: "Calvin Harris",
+        cover: "imagens/calvin_18Months.jpg",
+        album: "18 Months",
+        url: "https://open.spotify.com/embed/track/6YUTL4dYpB9xZO5qExPf05?utm_source=generator"
+      },
+      {
+        title: "Titanium (feat. Sia)",
+        artist: "David Guetta",
+        cover: "imagens/david_nothing.jpg",
+        album: "Nothing but the Beat",
+        url: "https://open.spotify.com/embed/track/5072hCBK3Z15qRnTEzd8fy?utm_source=generator"
+      },
+      {
+        title: "Without You (feat. Usher)",
+        artist: "David Guetta",
+        cover: "imagens/david_nothing.jpg",
+        album: "Nothing but the Beat",
+        url: "https://open.spotify.com/embed/track/3UN6cIn3VIyg0z1LCuFSum?utm_source=generator"
+      },
+      {
+        title: "I Remember (with Kaskade)",
+        artist: "Deadmau5",
+        cover: "imagens/deadmau5_forLack.jpg",
+        album: "For Lack of a Better Name",
+        url: "https://open.spotify.com/embed/track/2edcAWwKM7SQajsFGP0edC?utm_source=generator"
+      },
+      {
+        title: "The Veldt",
+        artist: "Deadmau5",
+        cover: "imagens/deadmau5_albumTitle.jpg",
+        album: "album title goes here",
+        url: "https://open.spotify.com/embed/track/5YaqbhEmoxSpIbdBTPG6KQ?utm_source=generator"
+      },
+      {
+        title: "Alone",
+        artist: "Marshmellow",
+        cover: "imagens/marshmellow_joytime.jpg",
+        album: "Joytime",
+        url: "https://open.spotify.com/embed/track/3MEYFivt6bilQ9q9mFWZ4g?utm_source=generator"
+      },
+      {
+        title: "Happier (feat. Bastille)",
+        artist: "Marshmellow",
+        cover: "imagens/marshmellow_joytimeII.jpg",
+        album: "Joytime II",
+        url: "https://open.spotify.com/embed/track/7BqHUALzNBTanL6OvsqmC1?utm_source=generator"
+      },
     ];
 
-    let currentTrack = 0;
+    let currentTrack
     let isPlaying = true;
 
     const nextBtn = document.getElementById("nextBtn");
@@ -307,18 +395,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const albumCover = document.getElementById("albumCover");
     let logado = JSON.parse(localStorage.getItem('logado')) || "";
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+    let musica = localStorage.getItem('musica') || "";
 
-    function loadTrack(index) {
-    const track = tracks[index];
+    function loadTrack(index = 0) {
+      tracks.forEach((item, i) => {
+        if(item.title === musica){
+          index = i
+        }
+      })
+      localStorage.removeItem('musica');
+    currentTrack = index;
+    const selectedTrack = tracks[index]
     apiSpotify.src = ""; // força reload
     setTimeout(() => {
-      apiSpotify.src = track.url;
+      apiSpotify.src = selectedTrack.url;
     }, 50);
 
-    songTitle.textContent = track.title;
-    artistName.textContent = track.artist;
-    album.textContent = track.album;
-    albumCover.src = track.cover;
+    songTitle.textContent = selectedTrack.title;
+    artistName.textContent = selectedTrack.artist;
+    album.textContent = selectedTrack.album;
+    albumCover.src = selectedTrack.cover;
   }
 
     nextBtn.addEventListener("click", () => {
@@ -337,15 +433,18 @@ document.addEventListener("DOMContentLoaded", () => {
           if (!item.favoritos.includes(songTitle.textContent)) {
             item.favoritos.push(songTitle.textContent);
             logado.favoritos.push(songTitle.textContent);
-
-            localStorage.setItem('logado', JSON.stringify(logado));
-            localStorage.setItem('usuarios', JSON.stringify(usuarios));
             likeBtn.classList.toggle("liked");
+          } else {
+            usuario.favoritos = usuario.favoritos.filter(fav => fav !== musicTitle);
+            logado.favoritos = logado.favoritos.filter(fav => fav !== musicTitle);
+            likeBtn.classList.remove("liked");
           }
+          localStorage.setItem('logado', JSON.stringify(logado));
+          localStorage.setItem('usuarios', JSON.stringify(usuarios));
         }
       })
     });
 
     // Inicia com primeira faixa
     loadTrack(currentTrack);
-});
+})
