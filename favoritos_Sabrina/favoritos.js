@@ -44,11 +44,7 @@ search.addEventListener("input", (e) => {
 // Container onde os cards recentes aparecerão
 const recentesGrid = document.getElementById("recentes-grid");
 
-/**
- * Função que adiciona uma música à seção "Recentes".
- * Pode ser chamada pela sua amiga quando o usuário curtir uma música.
- * Exemplo de uso: addToRecentes("Dua Lipa", "Levitating");
- */
+
 function addToRecentes(artista, musica) {
   if (!recentesGrid) return;
 
