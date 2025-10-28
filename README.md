@@ -103,10 +103,10 @@ A metodologia **Kanban** foi adotada para organizar tarefas e acompanhar o progr
 ## 🧩 Modelagem de Software
 
 **Diagrama de Casos de Uso:**  
-![Diagrama de Casos de Uso](./assets/diagrama-uso.png)
+![Diagrama de Casos de Uso](imagens.README.md/DIAGRAMADEUSO.png)
 
 **Diagrama de Classes:**  
-![Diagrama de Classes](./assets/diagrama-classes.png)
+![Diagrama de Classes](imagens.README.md/DIAGRAMADECLASSE.png)
 
 ---
 
@@ -115,39 +115,39 @@ A metodologia **Kanban** foi adotada para organizar tarefas e acompanhar o progr
 ### Tela de Login
 O usuário insere seu e-mail e senha cadastrados para acessar o sistema.  
 Também é possível criar uma nova conta.
-![Tela de Login](./assets/login.png)
+![Tela de Login](./imagens.README.md/login3.png)
 
 ---
 
 ### Tela de Cadastro
 Formulário para inserção de nome completo, e-mail e senha.  
 Após o cadastro, o usuário pode acessar o sistema.
-![Tela de Cadastro](./assets/cadastro.png)
+![Tela de Cadastro](imagens.README.md/cadastro.png)
 
 ---
 
 ### Tela de Catálogo (Home)
 Exibe diferentes gêneros musicais e artistas.  
 Inclui menu para navegação, perfil e favoritos.
-![Tela de Catálogo](./assets/catalogo.png)
+![Tela de Catálogo](./imagens.README.md/LOGIN2.png)
 
 ---
 
 ### Tela de Detalhes
 Mostra informações sobre o artista, como álbuns, músicas e uma breve biografia.
-![Tela de Detalhes](./assets/detalhes.png)
+![Tela de Detalhes](imagens.README.md/detalhes.png)
 
 ---
 
 ### Tela de Reprodução
 Permite tocar a música selecionada, com player completo.
-![Tela de Reprodução](./assets/reproducao.png)
+![Tela de Reprodução](./imagens.README.md/cadastro.png)
 
 ---
 
 ### Tela de Favoritos
 Lista os artistas e músicas marcados como favoritos pelo usuário.
-![Tela de Favoritos](./assets/favoritos.png)
+![Tela de Favoritos](/imagens.README.md/favoritos.png)
 
 ---
 
