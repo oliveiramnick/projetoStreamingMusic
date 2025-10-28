@@ -118,3 +118,8 @@ function removerFavorito(indexLogado, item) {
       })
     renderizarLista()
 }
+
+function irMusica(texto){
+  localStorage.setItem('musica', texto);
+  document.location="../conteudo_Therciane/reproducao.html"
+}
