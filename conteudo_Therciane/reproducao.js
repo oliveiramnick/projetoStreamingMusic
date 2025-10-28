@@ -15,7 +15,7 @@ const tracks = [
       {
         title: "Save Your Tears 'remix'",
         artist: "The Weeknd, Ariana Grande",
-        cover: "https://i.pinimg.com/1200x/ae/6a/3b/ae6a3b42c80f7f4c3f7664bcd1f78dab.jpg",
+        cover: "https://i.pinimg.com/1200x/eb/a9/4d/eba94d482871731324e2730d5ff963a7.jpg",
         album: "Starboy",
         url: "https://open.spotify.com/embed/track/37BZB0z9T8Xu7U3e65qxFy"
       },
@@ -447,4 +447,5 @@ const tracks = [
 
     // Inicia com primeira faixa
     loadTrack(currentTrack);
+
 })
