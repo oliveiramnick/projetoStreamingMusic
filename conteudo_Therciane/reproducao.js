@@ -405,14 +405,28 @@ const tracks = [
     albumCover.src = selectedTrack.cover;
   }
 
+    function loadTrack2(index = 0) {
+    currentTrack = index;
+    const selectedTrack = tracks[index]
+    apiSpotify.src = ""; // força reload
+    setTimeout(() => {
+      apiSpotify.src = selectedTrack.url;
+    }, 50);
+
+    songTitle.textContent = selectedTrack.title;
+    artistName.textContent = selectedTrack.artist;
+    album.textContent = selectedTrack.album;
+    albumCover.src = selectedTrack.cover;
+  }
+
     nextBtn.addEventListener("click", () => {
       currentTrack = (currentTrack + 1) % tracks.length;
-      loadTrack(currentTrack);
+      loadTrack2(currentTrack);
     });
 
     prevBtn.addEventListener("click", () => {
       currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
-      loadTrack(currentTrack);
+      loadTrack2(currentTrack);
     });
 
     likeBtn.addEventListener("click", () => {
@@ -437,3 +451,13 @@ const tracks = [
     loadTrack(currentTrack);
 
 })
+
+function favoritos(){
+      const alertaFavoritos = document.getElementById("alertaFavoritos");
+      
+      alertaFavoritos.textContent = "Adicionado em favoritos"
+      setTimeout(function() {
+        alertaFavoritos.textContent = ""
+      }, 3000);
+      
+    }

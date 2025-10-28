@@ -46,10 +46,11 @@ body {
   font-size: 1.8rem;
   cursor: pointer;
   transition: transform 0.2s ease;
+  transform: rotate(90deg);
 }
 
 #btnDown:hover {
-  transform: translateY(2px);
+  transform: rotate(90deg);
   color: #836fff;
 }
 
@@ -81,3 +82,8 @@ iframe {
     width: 50vh;
   }
 }
+
+#alertaFavoritos{
+  color: #836fff;
+}
+
