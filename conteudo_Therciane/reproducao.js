@@ -13,7 +13,7 @@ const scopes = [
 const tracks = [
   //Pop -> The Weeknd, Lady Gaga
       {
-        title: "Save Your Tears 'remix'",
+        title: "Save Your Tears remix",
         artist: "The Weeknd, Ariana Grande",
         cover: "https://i.pinimg.com/1200x/eb/a9/4d/eba94d482871731324e2730d5ff963a7.jpg",
         album: "Starboy",
@@ -157,17 +157,145 @@ const tracks = [
 
       //Eletronico -> david guetta, marshmellow 
       {
-        title: "In The Name Of Love",
-        artist: "Bebe Rexha, Martin Garrix",
-        cover: "https://i.pinimg.com/736x/70/e4/3b/70e43bf90fe0ae8e8a8ff9cf64ca67fb.jpg",
-        url: "https://open.spotify.com/embed/track/23L5CiUhw2jV1OIMwthR3S"
+        title: "Hey Brother",
+        artist: "Avcii",
+        cover: "imagens/avcii_true.jpg",
+        album: "True",
+        url: "https://open.spotify.com/embed/track/4lhqb6JvbHId48OUJGwymk?utm_source=generator"
+      },
+      {
+        title: "Wake Me Up",
+        artist: "Avcii",
+        cover: "imagens/avcii_true.jpg",
+        album: "True",
+        url: "https://open.spotify.com/embed/track/0nrRP2bk19rLc0orkWPQk2?utm_source=generator"
+      },
+      {
+        title: "We Found Love (feat. Rihanna)",
+        artist: "Calvin Harris",
+        cover: "imagens/calvin_talk.jpg",
+        album: "Talk That Talk (Rihanna)",
+        url: "https://open.spotify.com/embed/track/6qn9YLKt13AGvpq9jfO8py?utm_source=generator"
+      },
+      {
+        title: "Summer",
+        artist: "Calvin Harris",
+        cover: "imagens/calvin_18Months.jpg",
+        album: "18 Months",
+        url: "https://open.spotify.com/embed/track/6YUTL4dYpB9xZO5qExPf05?utm_source=generator"
+      },
+      {
+        title: "Titanium (feat. Sia)",
+        artist: "David Guetta",
+        cover: "imagens/david_nothing.jpg",
+        album: "Nothing but the Beat",
+        url: "https://open.spotify.com/embed/track/5072hCBK3Z15qRnTEzd8fy?utm_source=generator"
+      },
+      {
+        title: "Without You (feat. Usher)",
+        artist: "David Guetta",
+        cover: "imagens/david_nothing.jpg",
+        album: "Nothing but the Beat",
+        url: "https://open.spotify.com/embed/track/3UN6cIn3VIyg0z1LCuFSum?utm_source=generator"
+      },
+      {
+        title: "I Remember (with Kaskade)",
+        artist: "Deadmau5",
+        cover: "imagens/deadmau5_forLack.jpg",
+        album: "For Lack of a Better Name",
+        url: "https://open.spotify.com/embed/track/2edcAWwKM7SQajsFGP0edC?utm_source=generator"
+      },
+      {
+        title: "The Veldt",
+        artist: "Deadmau5",
+        cover: "imagens/deadmau5_albumTitle.jpg",
+        album: "album title goes here",
+        url: "https://open.spotify.com/embed/track/5YaqbhEmoxSpIbdBTPG6KQ?utm_source=generator"
+      },
+      {
+        title: "Alone",
+        artist: "Marshmellow",
+        cover: "imagens/marshmellow_joytime.jpg",
+        album: "Joytime",
+        url: "https://open.spotify.com/embed/track/3MEYFivt6bilQ9q9mFWZ4g?utm_source=generator"
+      },
+      {
+        title: "Happier (feat. Bastille)",
+        artist: "Marshmellow",
+        cover: "imagens/marshmellow_joytimeII.jpg",
+        album: "Joytime II",
+        url: "https://open.spotify.com/embed/track/7BqHUALzNBTanL6OvsqmC1?utm_source=generator"
       },
       //Mpb -> 
       {
-        title: "Exagerado",
-        artist: "Cazuza",
-        cover: "https://i.pinimg.com/736x/c8/d1/6a/c8d16aae8928b2f55f1b881aa399f83c.jpg",
-        url: "https://open.spotify.com/embed/track/4d0DpU7Odiv0ztvX2GxJlk"
+        title: "Desde Que o Samba É Samba",
+        artist: "Caetano Veloso",
+        cover: "imagens/caetanoVeloso.jpg",
+        album: "Caetano Veloso",
+        url: "https://open.spotify.com/embed/track/628hP5ZZjXTz4AnIyDfDZ0?utm_source=generator"
+      },
+      {
+        title: "Sonho Meu",
+        artist: "Caetano Veloso",
+        cover: "imagens/caetanoVeloso.jpg",
+        album: "Caetano Veloso",
+        url: "https://open.spotify.com/embed/track/4wUzJax4y4a6jIhbF28LoC?utm_source=generator"
+      },
+      {
+        title: "Apesar de Você",
+        artist: "Chico Buarque",
+        cover: "imagens/chicoBuarque.jpg",
+        album: "Chico Buarque",
+        url: "https://open.spotify.com/embed/track/2GAFZG9Z7UGS1iMm4Idrnr?utm_source=generator"
+      },
+      {
+        title: "Cotidiano",
+        artist: "Chico Buarque",
+        cover: "imagens/chico_construcao.png",
+        album: "Construção",
+        url: "https://open.spotify.com/embed/track/127twwy3iCo1xBRQHyWetU?utm_source=generator"
+      },
+      {
+        title: "Alô Alô Marciano",
+        artist: "Elis Regina",
+        cover: "imagens/elisRegina.jpg",
+        album: "Elis Regina",
+        url: "https://open.spotify.com/embed/track/0wacj5AePmtFHt8mzdk6t4?utm_source=generator"
+      },
+      {
+        title: "Águas de Março",
+        artist: "Elis Regina",
+        cover: "imagens/elisAndTom.jpg",
+        album: "Elis & Tom",
+        url: "https://open.spotify.com/embed/track/15ouqiBsgL12olEwP3COsH?utm_source=generator"
+      },
+      {
+        title: "Coração Vagabundo",
+        artist: "Gal Costa",
+        cover: "imagens/gal_coracaoVagabundo.jpg",
+        album: "Coração Vagabundo",
+        url: "https://open.spotify.com/embed/track/60TftyBmMIL7wBdM37KuRj?utm_source=generator"
+      },
+      {
+        title: "Baby",
+        artist: "Gal Costa",
+        cover: "imagens/galCosta.jpg",
+        album: "Gal Costa",
+        url: "https://open.spotify.com/embed/track/0C13P4IghHNFPjt4zIJ8vX?utm_source=generator"
+      },
+      {
+        title: "Cheiro de Amor",
+        artist: "Maria Bethania",
+        cover: "imagens/maria_cancoes",
+        album: "As Canções Que Você Fez Pra Mim",
+        url: "https://open.spotify.com/embed/track/2dhV6VPKdqNg85vgv16xjo?utm_source=generator"
+      },
+      {
+        title: "Reconvexo",
+        artist: "Maria Bethania",
+        cover: "imagens/maria_aoVivo",
+        album: "Ao Vivo",
+        url: "https://open.spotify.com/embed/track/1ddeP7G76wscmc0RH5sjVA?utm_source=generator"
       },
       //Sertanejo -> Luan Santana, Jorge & Matheus
       {
@@ -239,146 +367,6 @@ const tracks = [
         cover: "https://i.pinimg.com/736x/27/23/65/272365359c14ada75c648c0d8101a3c2.jpg",
         album: "Na Balada",
         url: "https://open.spotify.com/embed/track/7iXN1pwx70l9NXsUt55AGS"
-      },
-      {
-        title: "Desde Que o Samba É Samba",
-        artist: "Caetano Veloso",
-        cover: "imagens/caetanoVeloso.jpg",
-        album: "Caetano Veloso",
-        url: "https://open.spotify.com/embed/track/628hP5ZZjXTz4AnIyDfDZ0?utm_source=generator"
-      },
-      {
-        title: "Sonho Meu",
-        artist: "Caetano Veloso",
-        cover: "imagens/caetanoVeloso.jpg",
-        album: "Caetano Veloso",
-        url: "https://open.spotify.com/embed/track/4wUzJax4y4a6jIhbF28LoC?utm_source=generator"
-      },
-      {
-        title: "Apesar de Você",
-        artist: "Chico Buarque",
-        cover: "imagens/chicoBuarque.jpg",
-        album: "Chico Buarque",
-        url: "https://open.spotify.com/embed/track/2GAFZG9Z7UGS1iMm4Idrnr?utm_source=generator"
-      },
-      {
-        title: "Cotidiano",
-        artist: "Chico Buarque",
-        cover: "imagens/chico_construcao.png",
-        album: "Construção",
-        url: "https://open.spotify.com/embed/track/127twwy3iCo1xBRQHyWetU?utm_source=generator"
-      },
-      {
-        title: "Alô Alô Marciano",
-        artist: "Elis Regina",
-        cover: "imagens/elisRegina.jpg",
-        album: "Elis Regina",
-        url: "https://open.spotify.com/embed/track/0wacj5AePmtFHt8mzdk6t4?utm_source=generator"
-      },
-      {
-        title: "Águas de Março",
-        artist: "Elis Regina",
-        cover: "imagens/elisAndTom.jpg",
-        album: "Elis & Tom",
-        url: "https://open.spotify.com/embed/track/15ouqiBsgL12olEwP3COsH?utm_source=generator"
-      },
-      {
-        title: "Coração Vagabundo",
-        artist: "Gal Costa",
-        cover: "imagens/gal_coracaoVagabundo.jpg",
-        album: "Coração Vagabundo",
-        url: "https://open.spotify.com/embed/track/60TftyBmMIL7wBdM37KuRj?utm_source=generator"
-      },
-      {
-        title: "Baby",
-        artist: "Gal Costa",
-        cover: "imagens/galCosta.jpg",
-        album: "Gal Costa",
-        url: "https://open.spotify.com/embed/track/0C13P4IghHNFPjt4zIJ8vX?utm_source=generator"
-      },
-      {
-        title: "Cheiro de Amor",
-        artist: "Maria Bethania",
-        cover: "imagens/maria_cancoes",
-        album: "As Canções Que Você Fez Pra Mim",
-        url: "https://open.spotify.com/embed/track/2dhV6VPKdqNg85vgv16xjo?utm_source=generator"
-      },
-      {
-        title: "Reconvexo",
-        artist: "Maria Bethania",
-        cover: "imagens/maria_aoVivo",
-        album: "Ao Vivo",
-        url: "https://open.spotify.com/embed/track/1ddeP7G76wscmc0RH5sjVA?utm_source=generator"
-      },
-      {
-        title: "Hey Brother",
-        artist: "Avcii",
-        cover: "imagens/avcii_true.jpg",
-        album: "True",
-        url: "https://open.spotify.com/embed/track/4lhqb6JvbHId48OUJGwymk?utm_source=generator"
-      },
-      {
-        title: "Wake Me Up",
-        artist: "Avcii",
-        cover: "imagens/avcii_true.jpg",
-        album: "True",
-        url: "https://open.spotify.com/embed/track/0nrRP2bk19rLc0orkWPQk2?utm_source=generator"
-      },
-      {
-        title: "We Found Love (feat. Rihanna)",
-        artist: "Calvin Harris",
-        cover: "imagens/calvin_talk.jpg",
-        album: "Talk That Talk (Rihanna)",
-        url: "https://open.spotify.com/embed/track/6qn9YLKt13AGvpq9jfO8py?utm_source=generator"
-      },
-      {
-        title: "Summer",
-        artist: "Calvin Harris",
-        cover: "imagens/calvin_18Months.jpg",
-        album: "18 Months",
-        url: "https://open.spotify.com/embed/track/6YUTL4dYpB9xZO5qExPf05?utm_source=generator"
-      },
-      {
-        title: "Titanium (feat. Sia)",
-        artist: "David Guetta",
-        cover: "imagens/david_nothing.jpg",
-        album: "Nothing but the Beat",
-        url: "https://open.spotify.com/embed/track/5072hCBK3Z15qRnTEzd8fy?utm_source=generator"
-      },
-      {
-        title: "Without You (feat. Usher)",
-        artist: "David Guetta",
-        cover: "imagens/david_nothing.jpg",
-        album: "Nothing but the Beat",
-        url: "https://open.spotify.com/embed/track/3UN6cIn3VIyg0z1LCuFSum?utm_source=generator"
-      },
-      {
-        title: "I Remember (with Kaskade)",
-        artist: "Deadmau5",
-        cover: "imagens/deadmau5_forLack.jpg",
-        album: "For Lack of a Better Name",
-        url: "https://open.spotify.com/embed/track/2edcAWwKM7SQajsFGP0edC?utm_source=generator"
-      },
-      {
-        title: "The Veldt",
-        artist: "Deadmau5",
-        cover: "imagens/deadmau5_albumTitle.jpg",
-        album: "album title goes here",
-        url: "https://open.spotify.com/embed/track/5YaqbhEmoxSpIbdBTPG6KQ?utm_source=generator"
-      },
-      {
-        title: "Alone",
-        artist: "Marshmellow",
-        cover: "imagens/marshmellow_joytime.jpg",
-        album: "Joytime",
-        url: "https://open.spotify.com/embed/track/3MEYFivt6bilQ9q9mFWZ4g?utm_source=generator"
-      },
-      {
-        title: "Happier (feat. Bastille)",
-        artist: "Marshmellow",
-        cover: "imagens/marshmellow_joytimeII.jpg",
-        album: "Joytime II",
-        url: "https://open.spotify.com/embed/track/7BqHUALzNBTanL6OvsqmC1?utm_source=generator"
       },
     ];
 
