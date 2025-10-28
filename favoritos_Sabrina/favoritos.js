@@ -44,7 +44,11 @@ search.addEventListener("input", (e) => {
 // Container onde os cards recentes aparecerão
 const recentesGrid = document.getElementById("recentes-grid");
 
-
+/**
+ * Função que adiciona uma música à seção "Recentes".
+ * Pode ser chamada pela sua amiga quando o usuário curtir uma música.
+ * Exemplo de uso: addToRecentes("Dua Lipa", "Levitating");
+ */
 function addToRecentes(artista, musica) {
   if (!recentesGrid) return;
 
@@ -118,4 +122,53 @@ function removerFavorito(indexLogado, item) {
 function irMusica(texto){
   localStorage.setItem('musica', texto);
   document.location="../conteudo_Therciane/reproducao.html"
+}
+
+// conta
+const popupConta = document.querySelector('.popup-conta')
+const popupConfiguracao = document.querySelector('.popup-configuracao')
+
+function conta(){
+    const nome = document.getElementById('nome')
+    const email = document.getElementById('email')
+    
+    nome.textContent = logado.nome
+    email.textContent = logado.email
+}
+
+function atualizarUsuario(){
+    const novoNome = document.getElementById('novoNome').value.trim()
+    const novoEmail = document.getElementById('novoEmail').value.trim()
+    
+    const index = usuarios.findIndex(item => item.email === logado.email)
+    usuarios[index].nome = novoNome
+    usuarios[index].email = novoEmail
+
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    logado = usuarios[index];
+    localStorage.setItem('logado', JSON.stringify(logado));
+    conta()
+    popupConfiguracao.style.display = 'none'
+}
+
+function popupAbrirConta(){
+    popupConta.style.display = 'block'
+    conta()
+}
+
+function popupAbrirConfiguracao(){
+    popupConfiguracao.style.display = 'block' 
+}
+
+function popupFecharConta(){
+    popupConta.style.display = 'none'
+}
+
+function popupFecharConfiguracao(){
+    popupConfiguracao.style.display = 'none'
+}
+
+function sair(){
+    localStorage.removeItem('logado');
+    document.location="../login_Nicole/login.html"
 }
