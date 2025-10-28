@@ -322,12 +322,14 @@ body.search-active .playlist-card p {
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 .popup-conteudo img{
     background-color: #ffffff;
     width: 30px;
     padding: 2px;
     border-radius: 20px;
+    
 }
 .popup-conteudo h1{
     margin: 10px;
@@ -339,6 +341,7 @@ body.search-active .playlist-card p {
     font-size: large;
     text-align: left;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 .popup-conteudo input{
     width: 80%;
@@ -349,6 +352,7 @@ body.search-active .playlist-card p {
     color: #ffffff;
     font-family: Helvetica, Arial, sans-serif;
     font-size: large;
+    border-radius: 10px;
 }
 .popup-conteudo input::placeholder{
     color: #ffffff;
@@ -359,7 +363,7 @@ body.search-active .playlist-card p {
     max-width: 300px;
     margin: 10% auto;
     padding: 20px;
-    background-color: #2b2b2b;
+    background-color: rgba(14, 14, 14, 0.918);
     position: relative;
     border-radius: 20px;
 }
@@ -367,7 +371,7 @@ body.search-active .playlist-card p {
     padding: 6px 12px;
     position: absolute;
     color: #836fff;
-    background-color: #2b2b2b;
+    background-color: #2b2b2b00;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -384,4 +388,5 @@ body.search-active .playlist-card p {
     border-style: none;
     color: #ffffff;
     cursor: pointer;
+    
 }
