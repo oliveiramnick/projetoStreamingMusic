@@ -1,7 +1,7 @@
 :root{
     --primary-color: #836fff;
     --black-color: #000;
-    --gray-color: #2b2b2b;
+    --gray-color: #0707079c;
     --light-gray-color: #5f5f5f;
     --white-color: #ffffff;
     --warning: #fc5353;
@@ -43,6 +43,26 @@ body{
     border-radius: 20px;
     border-radius: 20px;
 }
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#0000007e, #0000007e);
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("image.png") center/cover no-repeat;
+  filter: blur(3px);
+  transform: scale(1.1); /* evita bordas borradas visíveis */
+  z-index: -1;
+}
+
 input{
     width: 80%;
     padding: 10px;

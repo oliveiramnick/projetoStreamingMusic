@@ -25,9 +25,9 @@ a {
   left: 0;
   width: 230px;
   height: 100vh;
-  background: rgba(12, 10, 18, 0.85);
-  backdrop-filter: blur(14px);
-  padding: 20px 15px;
+  background: rgba(8, 8, 8, 0.767);
+  backdrop-filter: blur(15px);
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,6 +38,7 @@ a {
 .sidebar.closed {
   transform: translateX(-100%);
 }
+
 
 .sidebar .logo {
     font-size: 1.6rem;
@@ -52,20 +53,17 @@ a {
 }
 
 .sidebar nav li {
-  padding: 15px 18px;
+  padding: 12px 20px;
   cursor: pointer;
-  transition: color 0.3s ease;
-  display: flex;
-  align-items: center;
+  transition: color 0.3s;
 }
 
 .sidebar nav li i {
   margin-right: 10px;
 }
 
-.sidebar nav li:hover,
-.sidebar nav li.active {
-  color: #e9e4e4;
+.sidebar nav li:hover {
+  color: #836fff;
 }
 
 /* ===== MAIN ===== */
@@ -86,10 +84,10 @@ header {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background: rgba(19, 19, 19, 0.05);
+ background: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
   border-radius: 12px;
   backdrop-filter: blur(15px);
-  padding: 10px 20px;
   z-index: 5;
   gap: 20px;
 }
@@ -215,6 +213,7 @@ section h2 {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+
 .playlist-card:hover {
   background: rgba(255, 255, 255, 0.08);
   transform: scale(1.04);
@@ -259,16 +258,6 @@ body.search-active .playlist-grid {
 }
 
 /* ===== RESPONSIVIDADE ===== */
-@media (max-width: 1024px) {
-  .main {
-    padding: 40px 20px;
-  }
-
-  .playlist-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-}
-
 @media (max-width: 768px) {
   .sidebar {
     transform: translateX(-100%);
@@ -281,52 +270,9 @@ body.search-active .playlist-grid {
   #search {
     width: 100%;
   }
-
-  header {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .playlist-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .playlist-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .playlist-card img {
-    aspect-ratio: 1 / 1; /* fica quadrado no celular */
-  }
-
-  .favoritos-header {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* espaço entre estrela e texto */
-  margin-bottom: 10px;
-}
-
-.favoritos-header i {
-  color: #836fff; /* cor da estrela */
-  font-size: 1.5rem; /* tamanho da estrela */
-}
-
-/* Mantém o subtítulo abaixo do título */
-.favoritos-text h2 {
-  margin: 0;
-  font-size: 1.6rem;
-}
-
-.favoritos-text p {
-  margin: 2px 0 0 0;
-  font-size: 0.95rem;
-  color: #bdbdbd;
 }
 
 
-}
 
 /* retirar do favoritos */
 .fechar{
@@ -341,13 +287,23 @@ body.search-active .playlist-grid {
   color: #000000;
 }
 
-.renderizar{
-  background-color: #ffffff00;
+/* botão de refresh */
+.fa.fa-refresh {
+  background-color: #00000000;
+  margin-top: -14px;
   color: #fff;
-  border-style: none;
+  border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.renderizar:hover{
-  color: #000000;
+.fa.fa-refresh:hover {
+  transform: scale(1.2);
+}
+.titulo-favoritos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* título à esquerda */
+  margin-bottom: 15px;
+  gap: 10px;
 }

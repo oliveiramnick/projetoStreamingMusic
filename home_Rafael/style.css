@@ -10,8 +10,16 @@ body {
 
 a, p{
   text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  border-left: 5px solid #836fff; 
+  padding-left: 10px;             
+  font-weight: bold;
   color: white;
 }
+
 
 /* sidebar */
 .sidebar {
@@ -29,21 +37,18 @@ a, p{
   transition: transform 0.3s ease;
   z-index: 10;
 }
-.active{
-   background: rgba(7, 7, 7, 0);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-}
+
 .sidebar.closed {
   transform: translateX(-100%);
 }
 
+
 .sidebar .logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  padding: 20px;
-  color: #836fff;
-  text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 12px 0;
+    color: #836fff;
+    text-align: center;
 }
 
 .sidebar nav ul {

@@ -24,11 +24,11 @@
         <ul>
           <li>
             <a href="../home_Rafael/index.html">
-              <i class="fas fa-home"></i> Início
+              <i class="fas fa-home"></i>Início
             </a>
           </li>
           <li class="active">
-            <i class="fas fa-star"></i> Favoritos
+            <i class="fas fa-star"></i>Favoritos
           </li>
         </ul>
       </nav>
@@ -60,13 +60,16 @@
     </header>
 
     <!-- SEÇÃO DE RECENTES -->
-    <section id="recentes">
-      <h2>Favoritos</h2>
-      <button class="renderizar" onclick="renderizarLista()" id="recarregar">Recarregar</button>
-      <div class="playlist-grid" id="favoritos">
-        <!-- Os cards curtidos aparecerão aqui -->
-      </div>
-    </section>
+   <section id="recentes">
+  <div class="titulo-favoritos">
+    <h2>Favoritos</h2>
+    <button class="fa fa-refresh" onclick="renderizarLista()" id="refresh-btn"></button>
+  </div>
+
+  <div class="playlist-grid" id="favoritos">
+    <!-- Os cards curtidos aparecerão aqui -->
+  </div>
+</section>
 
     <!-- FAVORITOS POR GÊNERO MUSICAL -->
     <section id="forro">
