@@ -115,7 +115,7 @@ A metodologia **Kanban** foi adotada para organizar tarefas e acompanhar o progr
 ### Tela de Login
 O usuário insere seu e-mail e senha cadastrados para acessar o sistema.  
 Também é possível criar uma nova conta.
-![Tela de Login](./imagens.README.md/login3.png)
+![Tela de Login](imagens.README.md/login3.png)
 
 ---
 
@@ -129,7 +129,7 @@ Após o cadastro, o usuário pode acessar o sistema.
 ### Tela de Catálogo (Home)
 Exibe diferentes gêneros musicais e artistas.  
 Inclui menu para navegação, perfil e favoritos.
-![Tela de Catálogo](./imagens.README.md/LOGIN2.png)
+![Tela de Catálogo](imagens.README.md/LOGIN2.png)
 
 ---
 
@@ -141,13 +141,13 @@ Mostra informações sobre o artista, como álbuns, músicas e uma breve biograf
 
 ### Tela de Reprodução
 Permite tocar a música selecionada, com player completo.
-![Tela de Reprodução](./imagens.README.md/cadastro.png)
+![Tela de Reprodução](imagens.README.md/cadastro.png)
 
 ---
 
 ### Tela de Favoritos
 Lista os artistas e músicas marcados como favoritos pelo usuário.
-![Tela de Favoritos](/imagens.README.md/favoritos.png)
+![Tela de Favoritos](imagens.README.md/favoritos.png)
 
 ---
 
